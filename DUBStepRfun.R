@@ -45,7 +45,7 @@ DUBStepRfun=function(data,Labels){
   
 }
 
-data1=data1[,-caret::nearZeroVar(data1)]
+
 Labels=metadata1$labels
 VariableD=DUBStepRfun(dataGSE103334,Labels)
 saveRDS(VariableD,"VariableGenes.rds")
